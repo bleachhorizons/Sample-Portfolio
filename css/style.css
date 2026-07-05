@@ -1,0 +1,417 @@
+@font-face {
+  font-family: 'Subway Pro NY';
+  src: url('../fonts/Subway Pro New York.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Breul Groteska Bold';
+  src: url('../fonts/breulgroteska-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Breul Groteska Light';
+  src: url('../fonts/breulgroteska-light.woff2') format('woff2');
+}
+
+:root {
+    --primary-color: #cd0100;
+    --primary-color-hover: #ac0000;
+    --bg-main: #f0f0f0;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Breul Groteska Light', 'Ariel';
+    margin: 0;
+}
+
+a {
+    font: 20px 'Breul Groteska Bold', 'Tahoma';
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    background-color: var(--bg-main);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+}
+
+header nav a {
+    font-size: 30px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.about section p {
+    margin-bottom: 0;
+}
+
+.about section ul {
+    font: 25px 'Breul Groteska Light', 'Ariel';
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+    max-width: 60ch;
+}
+
+.about section ol {
+    font: 25px 'Breul Groteska Light', 'Ariel';
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+    max-width: 60ch;
+}
+
+#diorimage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+#diorname {
+    width: 300px;
+    transform: rotate(10deg);
+}
+
+#hobbies {
+    margin-bottom: 0;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+@media (max-width: 768px) {
+    .hobbies {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 30px; 
+    margin-bottom: 20px;
+}
+
+.project__content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .project__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project section p {
+    margin: 15px 20px;
+    margin-bottom: 0;
+}
+
+.project section ul {
+    font: 25px 'Breul Groteska Light', 'Ariel';
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+    max-width: 60ch;
+}
+
+.project__content img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid white;
+}
+
+
+.project__explain {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.project__explain h3 {
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    margin: 0px 20px;
+    width: 100%;
+}
+
+.project__explain p {
+    text-align: left;
+    width: 100%;
+}
+
+.project__explain li {
+    text-align: left;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.project__explain a {
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.project__explain a:hover {
+    color: var(--primary-color);
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume section {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume section section {
+    margin-bottom: 10px;
+}
+
+.resume p {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+.resume h2 {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.resume h3 {
+    font-size: 40px; 
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.resume li {
+    font-size: 25px;
+    width: 100%;
+}
+
+.resume a {
+    width: 100%;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 30px;
+}
+
+.contact label {
+    font: 30px 'Breul Groteska Bold', 'Tahoma';
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.contact input {
+    font: 20px 'Breul Groteska Light', 'Ariel';
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 0 solid black;
+    border-radius: 0;
+}
+
+.contact textarea {
+    font: 20px 'Breul Groteska Light', 'Ariel';
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 0 solid black;
+    border-radius: 0;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px 100%;
+    background: var(--primary-color);
+    color: var(--bg-main);
+    border: none;
+}
+
+.btn:hover {
+    background: var(--primary-color-hover);
+    color: var(--bg-main);
+}
+
+h1 {
+    font: 160px 'Subway Pro NY', 'Brush Script MT';
+    color: var(--primary-color);
+    margin: 25px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font: 80px 'Breul Groteska Bold', 'Tahoma';
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    font: 50px 'Breul Groteska Bold', 'Tahoma';
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font: 25px 'Breul Groteska Light', 'Ariel';
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+    max-width: 60ch;
+}
+
+#image-rue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#rue {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+#bottomlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#backtotop {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+footer p {
+    font: 15px 'Breul Groteska Light', 'Ariel';
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer a {
+    font: 15px 'Breul Groteska Light', 'Ariel';
+    margin-bottom: 10px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: var(--primary-color);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
